@@ -1,0 +1,55 @@
+#value1=int(input('Enter value1:'))
+#value2=int(input('Enter value2:'))
+#value3=int(input('Enter value3:'))
+#if value1>value2:
+    #print(f'{value1} is the greatest')
+#elif value2>value3:
+        #print('value2 is the greatest')
+#elif value3>value2:
+      #print('value3 is the greatest')
+#else:
+      #print('None of the values are greater')
+
+#my_temp=int(input('What is your temperature?:'))
+
+#if my_temp>30:
+      #print('The temeperature is too high')
+#elif my_temp>15:
+      #print('my temeprature is normal')
+#else:
+      #print('cold temperature,please keep warm')
+
+#x=int(input('Enter the value of x:'))
+#y=int(input('Enter the value of y:'))
+
+#if x in range(10,20) and y>100:
+    #print('condition met')
+#else:
+    #print('conditions not met')
+
+#password=str(input('Please enter your password:'))
+#if password=='Access123':
+    #print('Access Granted')
+#else:
+    #print('Access Denied')
+
+#student_score=int(input('what is your score?:'))
+#student_attendance=int(input('what is your student attendance?:'))
+#if student_score>90 and student_attendance>80:
+    #print('Excellent Student')
+#else:
+    #print('Good score but attendance needs improvement')
+str1=input('enter a random string1:')
+str2=input('enter a random string2:')
+
+length1=len(str1)
+length2=len(str2)
+
+if length1>length2:
+    print('str1 is longer')
+elif length2>length1:
+    print('str2 is longer')
+else:
+    print('They are of equal lengths')
+
+  

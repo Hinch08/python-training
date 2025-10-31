@@ -1,0 +1,13 @@
+trainees=[1,[2,["James","Mary"]]]
+#print(trainees[1][0])
+print(trainees[1][1][0])
+trainees.insert(0,56)
+print(trainees)
+trainees.append("Mike")
+print(trainees)
+trainees[2][0]=8
+print(trainees)
+trainees[2][1].remove("James")
+trainees[2][1].remove("Mary")
+print(trainees)
+print(len(trainees))

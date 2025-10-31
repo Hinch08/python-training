@@ -1,0 +1,544 @@
+PYTHON PROGRAMMING INTRODUCTION
+Python is a high level ,interpreted and general purpose programming language
+-> Is designed to be easy to read and write and powerful enough to build several things in different 
+domains - can build amost anythings
+
+WHY PYTHON?
+1.Simple and readable syntax
+**syntax is the set of rules that define how code is wriitten in a programming language**
+
+2.Less code ,more power - what might take language like Java or C++ or C 10 lines to do , Python might do the 
+same in 2 lines
+
+3.Interpreted Language - doesn't need to compile - Python code just runs by running Python files directly
+    **Interpreted languages** - executed by the interpreter by reading line by line ...Python
+    **Compiled languages** - ...Java ,C, C#, C++ , Rust, Go
+        -> you write a program
+        -> compile the program 
+        -> compiler checks for errors
+        -> if no errors , it creates an executable file
+        -> Machine executes and gives back output
+
+4.Massive community & libraries
+5.Cross platform - can run on any OS -> Windows , MacOS ,Linux and mobile systems
+
+PYTHON APPLICATIONS
+1.Web Development
+2.Data Science & Machine Learning
+3.Cybersecurity
+4.Game development
+5.Robotics
+
+CREATING A PYTHON FILE
+-To create a python file use .py extension
+main.py
+index.py
+regsiter.py
+number.py
+
+
+VARIABLES
+-> A variable a memory space / container used to hold values /data
+-> Think of it like  box used to store something
+->Simplest way to store data in programming
+
+x = 10
+x ---> variable
+10 --> value
+
+name = "Brian"
+name ---> variable
+"Brian" -> value
+
+N/B:- Variables can have any name of your choice but have to follow variable naming rules
+
+VARIABLE NAMING RULES
+1.Variable names can only contain letters,numbers and underscores
+ **Valid variable names**
+    -> name , number, x , y , email, phone, full_name1, number1
+**Invalid variable names**
+    -> name@ ,#number , full/name, name() ,'name'
+
+2.Variable names can only start with letters or underscores -cant start with numbers
+**valid names**
+    -> name1 , name2 , _full_name_ , _full_name1
+**Invalid names**
+    -> 1name, 23email,
+
+3.Variable names cant have spaces
+**Invalid names**
+    -> full name , phone number
+**Valid names**
+    -> full_name , fullname
+    -> phone_number , phonenumber
+
+4.Variable names are case sensitive
+ -> name , NAME, Name , NAMe -> not equal
+ -> x & X -> 2 different variables
+ x = 10
+ X = 10
+
+5.Variable names cant be Python keywords - cant use reserved words
+
+N/B:- It is good practice to give variables meaningful names
+-> name = "Jane"
+    x = "Jane"
+    email = "john@mail.com"
+
+Outputting values ->print() - function used to output / display values
+
+
+DATA TYPES
+-A data type tells Python what kind of value something is and what operations can be done on it
+-Every variaable has a type depending on the value it holds
+**Python Data Types**
+1.NUMERICAL DATA TYPES
+-Data that holds numerical values
+-Categorized into two:
+    a) Integer - numerical values representing whole numbers 
+        e.g 20,30,12,44,5000000
+        -denoted as int
+    b) Float - numerical values representing decimal or floating point numbers
+        e.g 12.4777, 1.3, 78.0122
+        -denoted as float 
+
+2.TEXTUAL DATA TYPES
+- Text based data
+- String - sequence of characters  -letters, numbers, symbols ,spaces etc enclosed in quotes (single or double)
+- denoted as str 
+- enables Python to work with text
+e.g 
+   name = "John Doe"
+   name = 'John Doe'
+   message = 'Hello World!!!'
+   sentence = "This is the 2nd programming class at 6:30pm(EAT)"
+   number = "100"
+
+
+
+
+3.BOOLEAN DATA TYPES
+-Data types used to represent truth values
+-True or False
+-denoted as bool
+is_adult = False
+
+
+int - numerical whole numbers
+float - numerical decimal numbers
+str - charcters enclosed in quotes
+bool - truth values
+
+
+CHECKING FOR DATA TYPES
+-We identify the type of data a value is in Python using type() function
+-Returns data type 
+
+**yellow** -undefined error 
+**red** - syntax or functional error
+
+Indentation - tabs or spaces at the beginning of a line
+print() - output values in the terminal
+type() - determine the data type
+input() - take user input from the terminal
+
+
+TAKING USER INPUT
+-Allowing the user to interact with the program by allowing the program to get data from the user
+-In Python we take user input using input()
+-N/B:- Any and all data coming from user input will always be a string 
+
+**Comments , Multiline strings, Type casting**
+
+**Comments**
+-A way of documenting code - highlighting & explaining key points or important features
+-Any commented code / line /lines arent executed by the program
+-Comments are enabled by #  
+
+**Multiline Strings**
+-Strings that traverse more than one line
+- By default a string traverses only one line
+- We use tripple openning and closing quotations
+    -> """ ....""" or ''' ....'''
+
+**Type Casting or Type Conversion**
+-> Converting data from one type to another
+-> str, bool, int , float
+-> str(), bool(), int(), float()
+-> boolean conversion : 1 -> True , 0 -> False
+
+**STRING OPERATIONS / METHODS**
+-Various ways in which we can manipulate string data
+-Mostly we use inbuilt methods
+
+1. Concatenation - combining or joining two or more strings into a single string
+            -we use '+' for joining strings
+
+2. Indexing - the order of characters in a string
+        -> indexing starts from zero - zero based
+        -> use [] to access items by index
+        -> can be reverse based -starts from -1
+
+3.Slicing - extracting a piece of data from a full string
+    -we use indexing
+    -starting point index : ending point index
+    e.g 0:5
+
+4.Length - determining the length or no of characters in a string
+        -we use len()
+        -spaces are also counted
+
+5.Casing - changing a string from uppercase to lowercase and vice versa
+        - .lower() .upper()
+
+
+TASK
+1. .strip() - removes whitespces from a string on both sides
+2. .lstrip() -removes whitespaces from the left side
+3 .rstrip() - removes whitespaces from the right side
+4. .title() - capitalizes the first character of each word in a string
+5 . index() - finds the index of the first instance of a specified character
+            - if no value is found throws an error
+6. find() -  finds the index of the first instance of a specified character 
+            - if no value is found returns -1
+7. count() - gives the no of occurrences of a specified character
+8. endswith()  - checks whether a string ends with specified character or characters
+    & startswith() - checks whether a string starts with specified character or characters
+    - returns a Boolean value
+9. isupper() - checks whether a string is in uppercase format
+ & islower() - checks whether a string is in lowercase format
+     -returns a Boolean value
+10. split() - split a string into substrings using a specified character - place the substrings in a list
+11. ***join()***
+12. replace() - replace a part of a string with another charcter or characters
+
+13. formatted string 
+    ->> f-string
+    --> converts a string into a formatted string
+    --> allows you to embed placeholders and variables inside strings
+    --> f or F.  &&& curly braces for placeholder variables
+
+14. ***Task on slide 27***
+-No.2
+-No.4
+-No.5
+
+
+
+**INTEGER & FLOAT OPERATIONS**
+1.Addition ---> + 
+2.Subtraction ----> -
+3.Division ------> /
+4.Multiplication -----> *
+5.Exponent ------> raise a number to another(power) ---> **
+6.Modulus -----> % ---> returns the remainder of a division operation
+7.Floor -----> // ---> divides and rounds down a number to the nearest whole number
+
+**Task on slide 30**
+-No.4
+
+
+**DATA STRUCTURES**
+-Store multiple items or data in a single memory space using collections
+-A way to store multiple items together
+-Types of data structures/collections
+1.Lists
+2.Tuples
+3.Dictionary
+4.Sets
+
+**LISTS**
+-An ordered and mutable collection of items of different data types
+-A container that holds more than one value - the values can be of any data type 
+-Use [] -> square brackets
+-Values in a list are comma-separated
+
+**Properties of Lists**
+1.They are ordered - uses indexing to access/order items
+    -indexing is zero-based(starts from zero)
+2.They can store multiple items of different data types 
+  e.g items = ["Mango",1,2,3.98,False]
+3.They are mutable - values in the list can be changed
+4.Values in a list are accessed using index
+5.A list can also contain other lists -nested list
+
+
+**LIST METHODS**
+1.Length - no of items in a list - len()
+2.Adding items to a list
+    **append() - adds a single item at the end of a list
+    **extend() - adds multiple items at the end of a list - uses a list
+    **insert() - adds an item at a specific index -insert(index,value)
+3.Removing items from a list
+    **remove() - removes an item by value
+    **pop()
+     - if no index is specified , it removes the last item
+     -can remove an item at a specific index if index is specified
+    **clear() - empties a list - removes everything from the list
+
+
+Task
+1.count() - returns the no of occurrences of an item
+2.index() - returns the index of the first occurrence of an item
+3.sort() - by default sorts a list in ascending order
+        - it can sort a list in descending order if you pass reverse=True
+4.reverse() - reverses the order of a list - last item becomes first and vice versa
+5.max() - returns the largest value
+6.min() - returns the smallest value
+7.copy() - creates a copy of a list
+8.the 2 methods of joining lists
+    -extend
+    -concatenation
+9. task on slide 35
+
+**TUPLES**
+-A tuple is a data structure used to hold multiple values of any data type that cant be changed or removed
+-represented using ()
+
+**properties of tuples**
+1.They are ordered - uses indexing to access /order items
+2.Values in a tuple are immutable - cant be changed or removed or added ***-unique property**
+3.They can hold multiple items of different types
+
+**TASK**
+1.How to update a tuple? - adding / removing / changing items in a tuple
+---> convert tuple to a list
+---> manipulate the list
+---> convert list back to tuple
+2.Slide 38
+
+
+**SETS**
+-A collection of unique and unordered items
+-Represented using curly braces - {}
+**Properties of sets**
+1.They are unordered - no indexing
+2.Values in a set are unique - no duplicate / repeated values
+3.They are mutable - can be changed
+4.Can hold multiple items of any type
+**set operations**
+1.accessing items in a set
+    -> cant directly access items in a list
+    -> use 'in' to confirm whether value is in set
+    -> convert to a list / tuple
+2.adding items to a set
+    -> add a single item - add()
+    -> add multiple items - update() - uses a list
+3.removing items from a set
+    -> .remove()- removes an element by value
+            -> if an element to be removed isnt found/doesnt exist, it throws an error
+    -> .discard() -removes an element by value
+            -> if an element to be removed isnt found/doesnt exist,it ignores - no error
+    -> .clear() - empties the set
+
+**DICTIONARIES**
+- A collection of key-value pairs
+-Represented using curly braces - {}
+-> *key* - what we use to access values
+-> *value* - actual data being stored
+            - attached to keys - accessed using keys
+-> key-value pairs aare comma-separated
+e.g "name":"Alice",
+    "age" :30
+
+"name" -> key
+"Alice" -> value
+    **Keys**
+1.They are unique and case sensitive
+    -they follow identifier/variable naming rules
+2.Keys must be strings
+3.They are immutable
+4.They are used to access values in a dictionary
+    **Values**
+1.Can be of any data type
+2.Are accessed using keys
+
+        **DICTIONARY METHODS/OPERATIONS**
+1.Accessing values in a dictionary -> values are accessed using keys
+        -> bracket notation -> my_dict["key"]
+        -> get methods - get("key")
+2.Adding or updating entries
+    -add a new key-value pair ---> my_dict['key'] = value
+    -update multiple keys -> update({...})
+3. .keys() - returns all dictionary keys in a list
+4. .values -returns all dictionary values in a list
+5. .items() - return all key-value pairs in a list of tuples
+6.Removing items from a dictionary
+    -> .pop("key") - pass a key to remove a specific value
+    -> .popitem() - removes the last inserted item
+    -> .clear() - empties the dictionary
+
+**difference between bracket notation and get()**
+**copy && nested dictionaries"
+
+**TASK**
+1.Side 40 - follow the 2 links provided
+2.Slide 43
+----> no.4 and 5 
+
+**slicing and stepping in strings** - no 5
+**change the tuple to a list** - no 6
+
+
+-SLICING AND STEPPING
+Slicing - taking a portion from the original string using indexing
+Stepping - skipping over elements 
+Syntax - string[start:end:step]
+-Reversing with slicing and stepping:-
+    -> string[::-1]
+
+
+**OPERATORS**
+-Are symbols that used to perform different functions
+-> Categorized into:-
+1.Arithmetic Operators - used for numeric /arithmetic operations
+    + -> addition 
+    - -> subtraction
+    * -> multiplication
+    / -> division 
+    ** -> exponent (power) e.g 3**4
+    % -> modulus (remainder)
+    // -> floor( divide and rounds down a number )
+
+2.Assignment Operators - used to assign values
+    = -> assign to e.g. x = 5
+    += -> add and assign
+    -= -> subtract and assign
+    /= -> divide and assign
+    *= -> multiply and assign
+    **= -> raise to a power and assign
+    %= -> find remainder and assign
+    //= -> floor and assign
+
+3.Comparison Operators - used to compare values - returns Boolean values
+    == -> equal to -equality operator
+    != -> not equal to
+    > - greater than
+    < - less than
+    >= - greater than or equal to
+    <= -less than or equal to
+    
+
+4.Logical Operators - used to combine conditions
+    and - returns True only if all conditions are True
+        e.g. Stacy is a student and a Python developer
+    or - returns True if at least one condition is True
+        e.g Stacy is a student or a Python developer
+    not - negates the Boolean value
+
+
+**TASK -NESTED DICTIONARIES**
+complex_dict = {
+    "user": {
+        "id": 101,
+        "name": "Alice",
+        "roles": ("admin", "editor"),
+        "preferences": {
+            "theme": "dark",
+            "languages": ["Python", "Go", "Rust"],
+            "notifications": {
+                "email": True,
+                "sms": False,
+                "apps": ["Slack", "Discord"]
+            }
+        }
+    },
+    "projects": [
+        {
+            "title": "Project X",
+            "contributors": ("Bob", "Charlie"),
+            "tasks": [
+                {"id": 1, "desc": "Setup repo", "done": True},
+                {"id": 2, "desc": "Create API", "done": False},
+                {"id": 3, "desc": "Write docs", "done": False}
+            ],
+            "tags": {"backend", "fastapi", "postgres"}
+        },
+        {
+            "title": "UI Overhaul",
+            "contributors": ["Diana"],
+            "tasks": [],
+            "tags": {"frontend", "react"}
+        }
+    ],
+    "config": {
+        "max_retries": 3,
+        "features": {
+            "beta": True,
+            "experiments": [
+                ("feature_flag", 0.75),
+                ("new_login_flow", 0.2),
+                ["dark_mode_v2", 0.05]
+            ]
+        },
+        "limits": {
+            "storage": {
+                "free": 5 * 1024**3,
+                "pro": float("inf")
+            }
+        }
+    },
+    "history": [
+        {"action": "login", "timestamp": "2025-10-28T15:00:00Z"},
+        {"action": "upload", "timestamp": "2025-10-28T15:05:10Z", "file": ("report.pdf", 1024 * 500)},
+        {"action": "share", "timestamp": "2025-10-28T15:06:00Z", "to": ["Team A", "Team B"]}
+    ],
+    "misc": (
+        {"nested_tuple_dict": {"numbers": (1, 2, 3)}},
+        [True, False, None, {"key": "value"}],
+        "end_of_world"
+    )
+}
+
+Print the following
+1. "report.pdf"
+2. "dark_mode_v2"
+3."postgres"
+4.{"numbers": (1, 2, 3)}
+5.Copy user key-value pair to another variable / dictionary using .copy() method
+
+
+
+
+**CONDITIONAL STATEMENTS**
+- structures that enable a program to make decisions
+-The program makes a decision based on pre-set conditions / rules
+- what happens when the condition is true?
+- what happens when the condition is false / not met?
+-if-else statements
+-syntax :
+if condition:
+    code to be executed if condition is true
+else:
+    what happens when condition is not met
+
+if -> what happens if condition is true
+else -> what happens if condition is false
+
+**Mutiple Conditions**
+if -elif -else statements
+
+if condition 1:
+    what happens if condition 1 is true
+elif condition 2:
+    what happens if condition 2 is true
+elif condition 3:
+    what happens if condition 3 is true
+else:
+    what happens if all conditions are false /not met
+
+e.g.SCHOOL GRADING SYSTEM
+
+70 - 100 -> A
+60 - 69 -> B
+50 - 59 -> C
+40 - 49 -> D
+0 - 39 -> E
+
+**NESTED IF**
+an if statement within another if statement
+
+**TASK**
+1.slide 56
+2.slide 57
+3.slide 58
