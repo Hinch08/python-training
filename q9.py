@@ -8,6 +8,9 @@
 #****
 #*****.....
 number=(int(input('Enter your number:')))
+
+
 stars="*"
 for number in range(1, number+1):
     print(stars*number)
+

@@ -12,7 +12,7 @@ else:
     points = 0
     for i in range(70, speed, 5):
         points+=1
-    print('points',points)
+    print('points:',points)
 
     if points > 12:
         print('License revoked!')   
