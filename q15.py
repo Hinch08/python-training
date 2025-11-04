@@ -1,10 +1,11 @@
+# Input basic details
 basic_salary = float(input('Enter basic salary: '))
 benefits = float(input('Enter your benefits: '))
 
 # Gross salary
 gross_salary = basic_salary + benefits
 
-# NSSF
+# NSSF (6% capped at 1080 for Tier II)
 if gross_salary > 18000:
     NSSF = 1080
 else:
@@ -65,11 +66,11 @@ else:
 # Net salary
 net_salary = gross_salary - (PAYEE + NSSF + NHDF + NHIF)
 
-# Print breakdown
+
 print("------ SALARY BREAKDOWN ------")
 print(f"Gross Salary: {gross_salary}")
-print(f"NSSF Deduction: {NSSF}")
-print(f"NHDF Deduction: {NHDF}")
-print(f"NHIF Deduction: {NHIF}")
-print(f"PAYE: {PAYEE}")
-print(f"Net Salary: {net_salary}")
+print(f"NSSF Deduction: {NSSF:.2f}")
+print(f"NHDF Deduction: {NHDF:.2f}")
+print(f"NHIF Deduction: {NHIF:.2f}")
+print(f"PAYE: {PAYEE:.2f}")
+print(f"Net Salary: {net_salary:.2f}")
