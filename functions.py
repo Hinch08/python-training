@@ -1,4 +1,4 @@
-#8,9,11 with functions
+#8,9,10,11,14 with functions
 #WHY USE FUNCTI0NS?
 #A Reusable block of code
 #code organization
@@ -45,3 +45,7 @@ def add_numbers(a,b):
 sum1=add_numbers(4,5)
 sum2=add_numbers(10,20)
 print(sum1+sum2)
+#q1,q2,q3
+#slide 20
+
+
