@@ -27,7 +27,9 @@
 #parameters are temporary values passed in a function to make it reusable.
 #parameters are passed within a function definition
 #arguments:These are real values passed when calling a function in place of parameters,when calling a function.
-#NOTE number of arguments passed has to match the number and order of parameters.
+#NOTE nu
+# 
+# mber of arguments passed has to match the number and order of parameters.
 a=4
 b=5
 c=a+b
@@ -47,5 +49,11 @@ sum2=add_numbers(10,20)
 print(sum1+sum2)
 #q1,q2,q3
 #slide 20
-
+#slide 20
+number=int(input("Enter mathematics marks: "))
+eng=int(input("Enter english marks: "))
+kisw=int(input("Enter kiswahili marks: "))
+sci=int(input("Enter science marks: "))
+sst=int(input("Enter social studies marks: "))
+dededf  
 
