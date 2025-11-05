@@ -50,10 +50,14 @@ print(sum1+sum2)
 #q1,q2,q3
 #slide 20
 #slide 20
-number=int(input("Enter mathematics marks: "))
-eng=int(input("Enter english marks: "))
-kisw=int(input("Enter kiswahili marks: "))
-sci=int(input("Enter science marks: "))
-sst=int(input("Enter social studies marks: "))
-dededf  
+number=float(input("Enter mathematics marks: "))
+eng=float(input("Enter english marks: "))
+kisw=float(input("Enter kiswahili marks: "))
+sci=float(input("Enter science marks: "))
+sst=float(input("Enter social studies marks: "))
+def total_marks(number,eng,kisw,sci,sst):
+    return number+eng+kisw+sci+sst
+result=total_marks(number,eng,kisw,sci,sst)
+print("Total marks:",result)
+
 
