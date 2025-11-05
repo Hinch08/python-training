@@ -60,4 +60,21 @@ def total_marks(maths,eng,kisw,sci,sst):
 result=total_marks(maths,eng,kisw,sci,sst)
 print("Total marks:",result)
 
+def get_average(x):
+    return x/5
+average=get_average(result)
+print("Average marks:",average)
 
+def grade(average):
+    if average>80:
+        return 'A'
+    elif average>60:    
+        return 'B'
+    elif average>50:
+        return 'C'
+    elif average>40:
+        return 'D'
+    else:
+        return 'E' 
+final_grade=grade(average)
+print("Final grade:",final_grade)
