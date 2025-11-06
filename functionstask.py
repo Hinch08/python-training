@@ -41,9 +41,12 @@
 #print("Total marks:",result)
 print('------------------SALARY CALCULATION PROGRAMME-------------------------------------')
 basic_salary = float(input('Enter basic salary: '))
-benefits = float(input('Enter your benefits: '))
+benefits = float(input('Enter benefits: '))
 
-gross_salary = basic_salary + benefits 
+def calculate_gross_salary(basic_salary, benefits):
+    return basic_salary + benefits
+result=gross_salary=calculate_gross_salary(basic_salary, benefits)
+print("Gross Salary:", gross_salary) 
 
 def calculate_nssf(gross_salary):
     if gross_salary > 18000:
@@ -116,9 +119,3 @@ print(f"Gross Salary: {gross_salary}")
 print(f"NSSF Deduction: {NSSF}")
 print(f"NHIF Deduction: {NHIF}")
 print(f"NHDF Deduction: {NHDF:.2f}")
-
-value=str(input('Enter a value: '))
-def reverse_string(value):
-    return value [::-1]
-reversed_string=reverse_string(value)
-print(reversed_string)
