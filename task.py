@@ -6,10 +6,13 @@
 #reversed_result=reverse_string(my_string)
 #print(reversed_result)
 
-
-
-#def squares():
-    #for i in range(1,31):
-        #print(f"The square of {i} is {i**2}")
-#squares()
-
+list=[1,2,3,4,5,6,7,8,9,10,11,12]
+def even_numbers(list):
+    even_list=[]
+    for number in list:
+        if number%2==0:
+            even_list.append(number)
+    return even_list
+result=even_numbers(list)
+print(result)
+            
