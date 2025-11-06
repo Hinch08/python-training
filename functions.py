@@ -78,3 +78,5 @@ def grade(average):
         return 'E' 
 final_grade=grade(average)
 print("Final grade:",final_grade)
+
+#TASK GO AND DO QUESTIONS 15-20 using functions
