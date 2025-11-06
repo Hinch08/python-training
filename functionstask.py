@@ -39,6 +39,7 @@
     #return maths+eng+kis+sci+sst
 #result=total_marks(maths,eng,kis,sci,sst)
 #print("Total marks:",result)
+print('------------------SALARY CALCULATION PROGRAMME-------------------------------------')
 basic_salary = float(input('Enter basic salary: '))
 benefits = float(input('Enter your benefits: '))
 
@@ -115,3 +116,9 @@ print(f"Gross Salary: {gross_salary}")
 print(f"NSSF Deduction: {NSSF}")
 print(f"NHIF Deduction: {NHIF}")
 print(f"NHDF Deduction: {NHDF:.2f}")
+
+value=str(input('Enter a value: '))
+def reverse_string(value):
+    return value [::-1]
+reversed_string=reverse_string(value)
+print(reversed_string)
