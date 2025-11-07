@@ -46,7 +46,6 @@ benefits = float(input('Enter benefits: '))
 def calculate_gross_salary(basic_salary, benefits):
     return basic_salary + benefits
 result=gross_salary=calculate_gross_salary(basic_salary, benefits)
-print("Gross Salary:", gross_salary) 
 
 def calculate_nssf(gross_salary):
     if gross_salary > 18000:
@@ -114,7 +113,6 @@ PAYEE = calculate_payee(taxable_income)
 net_salary = gross_salary - (PAYEE + NSSF + NHDF + NHIF)
 print("Net Salary:", net_salary)
 print("------ SALARY BREAKDOWN ------")
-print("Gross Salary: ", gross_salary)
 print(f"Gross Salary: {gross_salary}")
 print(f"NSSF Deduction: {NSSF}")
 print(f"NHIF Deduction: {NHIF}")
